@@ -3,6 +3,8 @@ const path = require("path");
 const app = express();
 const port = 3000;
 
+app.use("/src", express.static(path.resolve("src")))
+
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(`index.html`));
 });
