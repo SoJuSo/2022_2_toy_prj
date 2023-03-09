@@ -1,12 +1,17 @@
 # 2022_2_toy_prj
-
+~~2022년에 만든걸 이제서야...~~
 SoJu Memo
 
 ---
 Vanilla JS, HTML5, CSS를 이용 <br/>
 LocalStorage를 이용하여 개인의 Todolist, Memo 기능 활성화
+<br/>
 
 Vercel을 통해 배포하기
+
+<br/>
+2023.03.09
+반응형으로 만들까? 모바일에서 디테일하게는 아니여도 화면 줄이는 비율에 따라서 변하도록 만들어보면 좋을 듯
 
 <!-- 2023.03.02 Win Laptop github check -->
 <!-- 2023.03.02 desktop github check -->
