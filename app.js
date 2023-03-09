@@ -6,7 +6,7 @@ const port = 3000;
 app.use("/src", express.static(path.resolve("src")))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(`newIndex.html`));
+    res.sendFile(path.resolve(`index.html`));
 });
 
 //

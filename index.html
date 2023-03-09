@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html style="width: 100%; height: 100%;">
+<html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <title>지도 생성하기</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/src/styles.css">
+    <!-- 왜 src파일에 css를 넣어야하는지 찾기  -->
+    <title>SoJu Memo</title>
 </head>
 
-<body style="width: 100%; height: 100%;">
-    <!-- 지도를 표시할 div 입니다 -->
-    <div id="map" style="width:99%;height:95%;"></div>
+<body>
+    <header id="header">
+        <script src="src/header/header.js"></script>
+    </header>
 
-    <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0190a63b0069991c4d4846738c388c78"></script>
-    <script>
-        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-            mapOption = {
-                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
-            };
+    <main id="main">
+        <script src="src/main/main.js"></script>
+        hello main
+    </main>
 
-        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-        var map = new kakao.maps.Map(mapContainer, mapOption); 
-    </script>
+    <footer id="footer">
+        <script src="src/footer/footer.js"></script>
+        hello footer<br />
+        Made by SoJuSo
+    </footer>
 </body>
 
 </html>
