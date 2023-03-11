@@ -39,6 +39,12 @@ const fetchData = async () => {
   }
 };
 
-fetchData();
-
+// 구조를 조금 더 깔끔하게?
 console.log(new Date());
+
+const dateView = document.createElement("div");
+const dateViewText = document.createTextNode(new Date());
+dateView.appendChild(dateViewText);
+document.getElementById("header").appendChild(dateView);
+
+fetchData();
