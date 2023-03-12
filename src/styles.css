@@ -17,13 +17,20 @@ body {
 
 header {
     width: auto;
-    height: 20%;
+    height: 15%;
     /* background-color: green; */
+}
+
+#intro {
+    background-color: green;
+    display : flex;
+    justify-content: center;
+    align-items : center;
 }
 
 main {
     width: auto;
-    height: 75%;
+    height: 80%;
     /* background-color: skyblue; */
 }
 
@@ -35,4 +42,8 @@ footer {
     display : flex;
     justify-content: center;
     align-items : center;
+}
+
+#id_div {
+    background-color: aqua;
 }
