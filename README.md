@@ -18,7 +18,12 @@ Vercel을 통해 배포하기
 <br />
 2023.03.11
 번역 기능이 있으면 재밌을듯?ㅋㅋ
+챗 지피티 api나...
 
+<br />
+03.20
+깃이 꼬였다.. 로컬의 main이랑 원격 저장소의 main을 다르게 지금까지 작업했다..
+에러가 많이 발생했고 해결해야한다.
 <!-- 2023.03.02 Win Laptop github check -->
 <!-- 2023.03.02 desktop github check -->
 <!-- 2023.03.06 Mac Laptop github check -->
