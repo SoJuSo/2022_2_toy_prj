@@ -32,15 +32,15 @@ header {
 
 main {
     width: auto;
-    height: 85%;
+    height: 87%;
     /* background-color: skyblue; */
 }
 
 footer {
     /* 현재 배경색은 구분을 위한 용도 */
-    background-color: brown;
+    background-color: #2F4858;
     width: auto;
-    height: 5%;
+    height: 3%;
     display : flex;
     justify-content: center;
     align-items : center;
