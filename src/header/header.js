@@ -12,11 +12,11 @@ const fetchData = async () => {
       .then((response) => response.json())
       //   .then(data => console.log(data[1].respond))
       .then((data) => (textSource = data[1].respond));
-    const advice = document.createElement("div");
+    const advice = $.createElement("div");
     advice.id = "id_div";
-    const adviceText = document.createTextNode(textSource);
+    const adviceText = $.createTextNode(textSource);
     advice.appendChild(adviceText);
-    document.getElementById("header").appendChild(advice);
+    $.getElementById("header").appendChild(advice);
   } catch (e) {
     throw e;
   }
@@ -25,9 +25,9 @@ const fetchData = async () => {
 // 구조를 조금 더 깔끔하게?
 console.log(new Date());
 
-// const dateView = document.createElement("div");
-// const dateViewText = document.createTextNode(new Date());
+// const dateView = $.createElement("div");
+// const dateViewText = $.createTextNode(new Date());
 // dateView.appendChild(dateViewText);
-// document.getElementById("header").appendChild(dateView);
+// $.getElementById("header").appendChild(dateView);
 
 fetchData();

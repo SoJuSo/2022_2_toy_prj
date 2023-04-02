@@ -47,6 +47,14 @@ footer {
     align-items : center;
 }
 
+#list_div {
+    width: 10px;
+    height: 10px;
+    border-width: 1px;
+    border-radius: 5%;
+    border: #2F4858;
+}
+
 #id_div {
     background-color: aqua;
 }
