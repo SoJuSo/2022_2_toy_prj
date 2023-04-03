@@ -7,4 +7,6 @@ $.getElementById("main").appendChild(main);
 
 const list = $.createElement("div");
 list.id = "list_div";
+const listtext = $.createTextNode("hello");
+list.appendChild(listtext);
 $.getElementById("main").appendChild(list);
