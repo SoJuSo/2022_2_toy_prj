@@ -2,7 +2,6 @@ html,
 body {
     margin: 0px;
     padding: 0px;
-    background-color: lightyellow;
 }
 
 html {
@@ -13,7 +12,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    /* background-color: lightyellow; */
+    background-color: #f3cf98;
 }
 
 header {
@@ -24,9 +23,9 @@ header {
 
 #intro {
     /* border-radius: 10px; */
-    background-color: green;
+    background-color: #ece6cc;
     display : flex;
-    color: red;
+    color: black;
     justify-content: center;
     align-items : center;
 }
@@ -39,7 +38,7 @@ main {
 
 footer {
     /* 현재 배경색은 구분을 위한 용도 */
-    background-color: #2F4858;
+    background-color: #ece6cc;
     width: auto;
     height: 3%;
     display : flex;
@@ -48,13 +47,25 @@ footer {
 }
 
 #list_div {
-    width: 10px;
-    height: 10px;
+    width: 50px;
+    height: 50px;
+    color: black;
     border-width: 1px;
     border-radius: 5%;
-    border: #2F4858;
+    border: #2F4858 solid;
 }
 
-#id_div {
-    background-color: aqua;
+#copyright_div{
+    color: black;
+    width: auto;
+    display : flex;
 }
+
+#addListButton{
+    width: 30px;
+    height: 30px;
+}
+
+/* #id_div {
+    background-color: aqua;
+} */
