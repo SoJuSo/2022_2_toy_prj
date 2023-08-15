@@ -3,7 +3,7 @@ console.log(`js is loaded in header`);
 
 const fetchData = async () => {
   try {
-    const url = "https://api.qwer.pw/request/helpful_text?apikey=guest";
+    const url = "https://api.adviceslip.com/advice";
     const option = {
       method: "get",
     };
@@ -11,7 +11,7 @@ const fetchData = async () => {
     const response = await fetch(url, option)
       .then((response) => response.json())
       //   .then(data => console.log(data[1].respond))
-      .then((data) => (textSource = data[1].respond));
+      .then((data) => (textSource = data.slip.advice));
     const advice = $.createElement("div");
     advice.id = "id_div";
     const adviceText = $.createTextNode(textSource);
