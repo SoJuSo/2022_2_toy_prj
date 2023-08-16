@@ -1,7 +1,7 @@
 const $ = document;
 console.log(`js is loaded in header`);
 
-// API 보류
+// 명언 API 보류
 // 문제점 1. 렌더링 순서 이슈 - HTML페이지가 렌더링 된 후 렌더링돼서 어색하다.
 // 문제점 2. 그렇게 의미있는 작업인지 모르겠다.
 // const fetchData = async () => {
