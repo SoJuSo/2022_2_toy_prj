@@ -47,8 +47,8 @@ footer {
 }
 
 #list_div {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     color: black;
     border-width: 1px;
     border-radius: 5%;
@@ -68,6 +68,12 @@ footer {
     height: 30px;
 }
 
+#del_button{
+    display: flex;
+    justify-content: right;
+    width: 30px;
+    height: 30px;
+}
 /* #id_div {
     background-color: aqua;
 } */

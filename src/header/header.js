@@ -23,24 +23,6 @@ console.log(`js is loaded in header`);
 //     throw e;
 //   }
 // };
+// fetchData();
 
 // 구조를 조금 더 깔끔하게?
-console.log(new Date());
-
-// const addListButton = $.createElement("button");
-// addListButton.id = "addListButton";
-// addListButton.addEventListener("click", () => {
-//   const temp = $.createElement("div");
-//   const temptext = $.createTextNode("hello");
-//   temp.appendChild(temptext);
-//   $.getElementById("main").appendChild(temp);
-//   console.log("button");
-// });
-// $.getElementById("header").appendChild(addListButton);
-
-// const dateView = $.createElement("div");
-// const dateViewText = $.createTextNode(new Date());
-// dateView.appendChild(dateViewText);
-// $.getElementById("header").appendChild(dateView);
-
-// fetchData();
