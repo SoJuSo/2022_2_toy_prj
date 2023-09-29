@@ -91,9 +91,12 @@ const addtodo = () => {
     let delete_button = $.createElement("button");
     let checkbox = $.createElement("input");
     checkbox.setAttribute("type", "checkbox");
-    addlist.innerHTML = new Date().toLocaleString() + "\n" + inputtext.value;
+    const date = $.createElement("div");
+    date.innerHTML = new Date().toLocaleString();
+    addlist.innerHTML = inputtext.value;
 
     $.getElementById("ul_wrapper").appendChild(addlist);
+    addlist.appendChild(date);
     addlist.appendChild(delete_button);
     addlist.appendChild(checkbox);
 
