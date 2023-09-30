@@ -52,6 +52,12 @@ textfield.type = "text";
 textfield.id = "textfield";
 textfield.placeholder = "할 일 입력";
 $.getElementById("upper_div_wrapper").appendChild(textfield);
+textfield.addEventListener("keyup", (e) => {
+  if (e.key == "Enter" || e.key == 13) {
+    e.preventDefault();
+    $.getElementById("addListButton").click();
+  }
+});
 // $.getElementById("textfield").addEventListener("click", addtodo());
 
 //#######################################################
@@ -91,8 +97,11 @@ const addtodo = () => {
     let delete_button = $.createElement("button");
     let checkbox = $.createElement("input");
     checkbox.setAttribute("type", "checkbox");
+    //날짜 입력받기
     const date = $.createElement("div");
-    date.innerHTML = new Date().toLocaleString();
+    date.innerHTML = new Date()
+      .toLocaleString()
+      .slice(0, new Date().toLocaleString().length - 3); //초단위 제거
     addlist.innerHTML = inputtext.value;
 
     $.getElementById("ul_wrapper").appendChild(addlist);

@@ -1,5 +1,4 @@
-html,
-body {
+* {
     margin: 0px;
     padding: 0px;
 }
@@ -12,22 +11,13 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background-color: #f3cf98;
+    background-color: #f1d09d;
 }
 
 header {
     width: auto;
     height: 10%;
     /* background-color: green; */
-}
-
-#intro {
-    /* border-radius: 10px; */
-    background-color: #ece6cc;
-    display : flex;
-    color: black;
-    justify-content: center;
-    align-items : center;
 }
 
 main {
@@ -39,6 +29,8 @@ main {
 footer {
     /* 현재 배경색은 구분을 위한 용도 */
     background-color: #ece6cc;
+    /* text-size-adjust: auto; */
+    font-size: 1em;
     width: auto;
     height: 3%;
     display : flex;
@@ -46,34 +38,57 @@ footer {
     align-items : center;
 }
 
-#list_div {
-    width: 100px;
-    height: 100px;
+#intro {
+    background-color: #ece6cc;
+    display : flex;
     color: black;
-    border-width: 1px;
-    border-radius: 5%;
-    border: #2F4858 solid;
+    justify-content: center;
+    align-items : center;
 }
 
-#copyright_div{
-    color: black;
-    width: auto;
+#upper_div_wrapper {
     display : flex;
+    justify-content: center;
+    flex: 1;
+}
+
+#textfield{
+    order: 1;
+    /* justify-content: center; */
+    width: 60%;
+    line-height: 100%;
+    font-size: 16px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(243, 241, 241);
 }
 
 #addListButton{
-    display: flex;
-    justify-content: right;
-    width: 30px;
-    height: 30px;
+    order: 2;
+    position: relative;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-decoration: none;
+    /* font-size: 20; */
+    transition : 0.5s;
+}
+/* 호버링 문제점 */
+/* 
+모바일 화면에서 제대로 동작하지 않는다.
+원인 - 모바일에서 입력감지랑 PC에서의 입력감지 로직이 달라서 일정 시간 이후에 돌아오도록 로직을 구현해야할듯?
+*/
+#addListButton:hover {
+    border-radius: 20px;
+    background-color:#d1a034;
+    transition: 0.75s;
 }
 
-#del_button{
-    display: flex;
-    justify-content: right;
-    width: 30px;
-    height: 30px;
+#middle_div_wrapper {
+    margin: 1%;
 }
-/* #id_div {
-    background-color: aqua;
-} */
