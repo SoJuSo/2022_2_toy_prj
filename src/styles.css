@@ -50,6 +50,13 @@ footer {
     display : flex;
     justify-content: center;
     flex: 1;
+    margin-bottom: 25px;
+}
+
+#middle_div_wrapper{
+    display : flex;
+    justify-content: center;
+    flex: 1;
 }
 
 #textfield{
@@ -66,6 +73,7 @@ footer {
     margin-right: 5px;
     background-color: rgb(243, 241, 241);
 }
+
 
 #addListButton{
     order: 2;
@@ -89,6 +97,16 @@ footer {
     transition: 0.75s;
 }
 
-#middle_div_wrapper {
-    margin: 1%;
+
+#ul_wrapper{
+    display : flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    flex: 1;
+    /* margin-top: 5px; */
+    list-style-type: none;
+    margin-bottom: 15px;
 }

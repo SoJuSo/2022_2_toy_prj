@@ -94,17 +94,22 @@ const addtodo = () => {
   } else {
     // alert(`${inputtext}`);
     let addlist = $.createElement("li");
+    let listtext = $.createElement("div");
     let delete_button = $.createElement("button");
+    delete_button.id = "list_button_delete";
     let checkbox = $.createElement("input");
     checkbox.setAttribute("type", "checkbox");
+    checkbox.id = "list_input_checkbox";
     //날짜 입력받기
     const date = $.createElement("div");
-    date.innerHTML = new Date()
+    date.id = "list_div_date";
+    date.innerText = new Date()
       .toLocaleString()
       .slice(0, new Date().toLocaleString().length - 3); //초단위 제거
-    addlist.innerHTML = inputtext.value;
+    listtext.innerText = inputtext.value;
 
     $.getElementById("ul_wrapper").appendChild(addlist);
+    addlist.appendChild(listtext);
     addlist.appendChild(date);
     addlist.appendChild(delete_button);
     addlist.appendChild(checkbox);
@@ -120,9 +125,11 @@ const addtodo = () => {
       //temp로 구현하니 역시나, 모든 속성이 temp에 따라 바뀐다.
       //체크박스를 통해 구현해보자
       if (checkbox.checked) {
-        addlist.style.textDecorationLine = "line-through";
+        listtext.style.textDecorationLine = "line-through";
+        date.style.textDecorationLine = "line-through";
       } else {
-        addlist.style.textDecorationLine = "none";
+        listtext.style.textDecorationLine = "none";
+        date.style.textDecorationLine = "none";
       }
     });
   }
