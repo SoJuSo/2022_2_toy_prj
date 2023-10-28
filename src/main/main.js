@@ -82,12 +82,12 @@ $.getElementById("middle_div_wrapper").appendChild(ul_wrapper);
 //버튼에 이벤트 추가
 const addListButton_add_function = $.getElementById("addListButton");
 addListButton_add_function.addEventListener("click", () => {
-  addtodo();
+  const inputtext = $.getElementById("textfield");
+  addtodo(inputtext);
 });
 
 //임시
-const addtodo = () => {
-  const inputtext = $.getElementById("textfield");
+const addtodo = (inputtext) => {
   if (inputtext.value == false) {
     alert("할 일을 입력해 주세요!");
     // console.log("!!");
@@ -106,13 +106,22 @@ const addtodo = () => {
     date.innerText = new Date()
       .toLocaleString()
       .slice(0, new Date().toLocaleString().length - 3); //초단위 제거
-    listtext.innerText = inputtext.value;
+
+    if (inputtext.value === undefined) {
+      listtext.innerText = inputtext;
+    } else {
+      listtext.innerText = inputtext.value;
+    }
+    console.log(inputtext);
+    if (inputtext.value !== undefined) {
+      setLocalStorage(inputtext.value);
+    }
 
     $.getElementById("ul_wrapper").appendChild(addlist);
     addlist.appendChild(listtext);
     addlist.appendChild(date);
     addlist.appendChild(delete_button);
-    addlist.appendChild(checkbox);
+    addlist.prepend(checkbox);
 
     delete_button.addEventListener("click", deletetodo);
     delete_button.innerText = "x";
@@ -140,3 +149,7 @@ const deletetodo = (e) => {
   let remove = e.target.parentElement; //해당 element만 삭제되어야 하기 때문
   remove.remove();
 };
+
+if (getLocalStorage) {
+  addtodo(getLocalStorage());
+}
