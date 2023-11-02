@@ -27,7 +27,6 @@ textfield.addEventListener("keyup", (e) => {
     $.getElementById("addListButton").click();
   }
 });
-// $.getElementById("textfield").addEventListener("click", addtodo());
 
 //#######################################################
 /* 중단부 리스트 */
